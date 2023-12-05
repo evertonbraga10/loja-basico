@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+.lojas h3{
+    text-align: center;
+}
+
+.copyright{
+    color: #313131;
+    padding: 2rem 0;
+    text-align: center
+}
+
+/* btn wpp */
+#div-fixa{
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    background: rgb(89, 245, 122);
+    width: 230px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#div-fixa.shrink {
+    width: 50px;
+    transition: 0.5s all;
+    overflow: hidden;
+}
+
+#div-fixa img{
+    width: 50px;
+    height: 50px;
+}
+
+#div-fixa a .flex-itens{
+    display: flex;
+    align-items: center;
+}
+
+#div-fixa a .flex-itens span{
+    display: block;
+    font-weight: bold;
+    color: #040305;
+    margin-left: 5px;
+    font-size: 18px;
+    min-width: 170px;
+    opacity: 0;
+}
+
+#div-fixa a .flex-itens span.aparecer{
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.flutuar{
+    animation-name: flutuar;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+    from{
+        transform: translate3d(0,0,0);
+        filter: brightness(100%);
+    }
+    to{
+        transform: translate3d(0,-15px,0);
+        filter: brightness(150%); 
+    }
+}

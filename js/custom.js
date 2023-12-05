@@ -60,7 +60,6 @@ Line 47:10 Transforming const to the configured target environment ("es5") is no
 })();
 
 // wpp btn
-
 const content = document.querySelector('[data-shrink="yes"]')
 
 const span = document.querySelector('[data-shrink="yes"] span')
