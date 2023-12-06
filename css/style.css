@@ -5,10 +5,15 @@
     text-decoration: none;
 }
 
-
-
-.lojas h3{
+.loja-locale h3{
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.lojas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .copyright{
